@@ -1,0 +1,81 @@
+.principal{
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    height: 100%;
+}
+
+.principal .conteudo-grid{
+    height: 100%;
+    position: relative;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 1rem; 
+    grid-template-areas: 
+        "nosticiasDoDia Patrocinio"; 
+    margin-top: 1rem;
+}
+
+.principal .noticiasPrincipais{
+    position: relative;
+    grid-area: noticiasPrincipais;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+.principal .nosticiasDoDia{
+    grid-area: nosticiasDoDia;
+    height: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.principal .Patrocinio{
+    grid-area: Patrocinio;
+    height: 10vh;
+    position: relative;
+    top: 5%;
+    width: 100%;
+    position: sticky;
+}
+
+.principal .caixaDoPatrocinador{
+    border: 1px solid black;
+    height: 200px;
+    width: 100%;
+    position: sticky;
+}
+
+
+
+@media (min-width: 200px) and (max-width: 700px) {
+    .principal{
+        display: block;
+    }
+
+    .Patrocinio{
+        display: none;
+    }
+
+    .nosticiasDoDia{
+        display: block;
+        width: 100%;
+    }
+
+    .principal .conteudo-grid{
+        height: 100%;
+        position: relative;
+        display: grid; 
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr; 
+        gap: 0px 1rem; 
+        grid-template-areas: 
+            "nosticiasDoDia"; 
+    }
+
+    .card{
+        width: 100%!important;
+    }
+}

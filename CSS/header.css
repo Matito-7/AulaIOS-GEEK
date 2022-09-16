@@ -1,0 +1,47 @@
+.cabecalho{
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 10vh;
+}
+
+.cabecalho .titulo{
+    color: #ff3936;
+}
+
+.menu{
+    font-size: 28px;
+}
+
+.menu .listaMenu{
+    display: flex;
+    list-style-type: none;
+}
+
+.menu .listaMenu .item{
+    padding-left: 1rem;
+}
+
+.cabecalho .menuResponsivo{
+    display: none;
+    position: relative;
+}
+
+.cabecalho .menuResponsivo .barra{
+    margin-top: 0.5rem;
+    border: 1px solid #ff3936;
+    width: 30px;
+}
+
+@media (min-width: 200px) and (max-width: 700px) {
+    .menu{
+        display: none;
+    }
+
+    .cabecalho .menuResponsivo{
+        display: block;
+        position: relative;
+    }
+}
